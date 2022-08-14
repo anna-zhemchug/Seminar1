@@ -1,12 +1,10 @@
-﻿Console.Write("Введите число a: ");
-int numberA = int.Parse(Console.ReadLine());
-Console.Write("Введите число b: ");
-int numberB = int.Parse(Console.ReadLine());
-Console.Write("Введите число с: ");
-int numberC = int.Parse(Console.ReadLine());
-int max = numberA;
-if(numberA > max) max = numberA;
-if(numberB > max) max = numberB;
-if(numberC > max) max = numberC;
-
-Console.WriteLine($"Максимальное число = {max}");
+﻿Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine());
+if(number % 2 == 0)
+{
+    Console.WriteLine($"Число {number} является чётным");
+}
+else
+{
+    Console.WriteLine($"Число {number} не является чётным");
+}

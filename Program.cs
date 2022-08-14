@@ -1,10 +1,11 @@
-﻿Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
-if(number % 2 == 0)
+﻿Console.Write("Введите число N: ");
+int N = int.Parse(Console.ReadLine());
+int count = 1;
+while (count <= N)
 {
-    Console.WriteLine($"Число {number} является чётным");
-}
-else
-{
-    Console.WriteLine($"Число {number} не является чётным");
+    if(count % 2 == 0)
+    {
+        Console.Write(count + ", ");
+    }
+    count++;
 }
